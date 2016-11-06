@@ -14,5 +14,5 @@ deployment:
   production:
     branch: master
     commands:
-      - docker login -e jmtandberg@gmail.com -u mattisjao -p 11daips789
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - ./deploy.sh
